@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            position: absolute;
+            top: 0;
+			left: 50%;
+			right: 50%;
+			transform: translate(-50%, 0);
+			border: 0px;
+            margin: auto;
+        }
+
+        body {
+            overflow: hidden;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script src="scripts/content/story.js"></script>
+    <script src="scripts/content/content.js"></script>
+    <script src="scripts/content/font.js"></script>
+    <script src="scripts/content/sound.js"></script>
+    <script src="scripts/content/sprite.js"></script>
+
+    <script src="scripts/core/commands/backgroundCommand.js"></script>
+    <script src="scripts/core/commands/fontCommand.js"></script>
+    <script src="scripts/core/commands/playSoundCommand.js"></script>
+    <script src="scripts/core/commands/saysCommand.js"></script>
+    <script src="scripts/core/commands/titleCommand.js"></script>
+    <script src="scripts/core/commands/waitCommand.js"></script>
+    <script src="scripts/core/commands/showCommand.js"></script>
+    <script src="scripts/core/commands/questionCommand.js"></script>
+    <script src="scripts/core/commands/stopMusicCommand.js"></script>
+    <script src="scripts/core/commands/removeBackground.js"></script>
+    <script src="scripts/core/commands/moveCommand.js"></script>
+    <script src="scripts/core/commands/removeCharacterCommand.js"></script>
+    <script src="scripts/core/commands/labelCommand.js"></script>
+    <script src="scripts/core/commands/endLabelCommand.js"></script>
+    <script src="scripts/core/commands/showSnowCommand.js"></script>
+    <script src="scripts/core/commands/hideSnowCommand.js"></script>
+    <script src="scripts/core/commands/gameoverCommand.js"></script>
+
+    <script src="scripts/core/vector.js"></script>
+    <script src="scripts/core/rectangle.js"></script>
+    <script src="scripts/core/parser.js"></script>
+    <script src="scripts/core/interpreter.js"></script>
+    <script src="scripts/core/game.js"></script>
+    <script src="scripts/core/input.js"></script>
+
+    <script src="scripts/controls/FlipbookLoader.js"></script>
+    <script src="scripts/controls/button.js"></script>
+    <script src="scripts/controls/typewriterLabel.js"></script>
+    <script src="scripts/controls/speachBubble.js"></script>
+    <script src="scripts/controls/typewriterSpeachBubble.js"></script>
+    <script src="scripts/controls/dialog.js"></script>
+    <script src="scripts/controls/fadeinText.js"></script>
+    <script src="scripts/controls/characterSpeachBubble.js"></script>
+
+    <script src="scripts/scenes/sceneManager.js"></script>
+    <script src="scripts/scenes/loadingScene.js"></script>
+    <script src="scripts/scenes/playScene.js"></script>
+
+    <script>
+        var game = new Game();
+        game.Initialize();
+        game.Loop();
+    </script>
+</body>
+
+</html>
